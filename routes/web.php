@@ -27,11 +27,11 @@ Route::get('/comingsoon', function () {
     return view('pages/coming-soon');
 });
 
-Route::get('/error-page', function () {
+Route::get('/errorpage', function () {
     return view('pages/error-page');
 });
 
-Route::get('about', function () {
+Route::get('/about', function () {
     return view('pages/about');
 });
 
