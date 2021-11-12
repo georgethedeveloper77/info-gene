@@ -180,7 +180,7 @@
                     </div>
                     <div class="call-to-action-select fancy-select-wrapper">
 
-                        <button class="au-btn au-btn-orange" onclick="window.location.href='/compareinsurance';">Get a
+                        <button class="au-btn au-btn-orange" onclick="window.location.href='/compare-insurance';">Get a
                             quote
                         </button>
                     </div>

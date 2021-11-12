@@ -18,7 +18,7 @@
                     <a href="/private-motor-quotation">Quotations</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="/compareinsurance">Quotations Results</a>
+                    <a href="/compare-insurance">Quotations Results</a>
                 </li>
             </ul>
         </div>

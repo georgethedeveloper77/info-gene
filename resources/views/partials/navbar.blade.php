@@ -76,7 +76,7 @@
                         </li>
 
                         <li class="dropdown">
-                            <a href="{{ url('/compareinsurance') }}">Compare Insurance</a>
+                            <a href="{{ url('/compare-insurance') }}">Compare Insurance</a>
                         </li>
 
                         <li class="dropdown">

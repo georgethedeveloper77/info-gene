@@ -17,10 +17,10 @@
                     </li>
                     <li class="au-breadcrumb-item">
                         <i aria-hidden="true" class="fa fa-university"></i>
-                        <a href="/compareinsurance">Compare Insurance</a>
+                        <a href="/compare-insurance">Compare Insurance</a>
                     </li>
                     <li class="au-breadcrumb-item active">
-                        <a href="/compareinsurance">Quotation</a>
+                        <a href="/compare-insurance">Quotation</a>
                     </li>
                 </ul>
             </div>
@@ -85,7 +85,25 @@
                                         <label for="validationTooltip04" class="form-label text-white">Year</label>
                                         <select class="form-select" id="yom" required>
                                             <option selected disabled value="">Year of Manufacture</option>
-                                            <option>...</option>
+                                            <option value="1">2021</option>
+                                            <option value="2">2020</option>
+                                            <option value="3">2019</option>
+                                            <option value="4">2018</option>
+                                            <option value="5">2017</option>
+                                            <option value="6">2016</option>
+                                            <option value="7">2015</option>
+                                            <option value="8">2014</option>
+                                            <option value="8">2013</option>
+                                            <option value="8">2012</option>
+                                            <option value="8">2011</option>
+                                            <option value="8">2010</option>
+                                            <option value="8">2009</option>
+                                            <option value="8">2008</option>
+                                            <option value="8">2007</option>
+                                            <option value="8">2006</option>
+                                            <option value="8">2005</option>
+                                            <option value="8">2004</option>
+                                            <option value="8">2003</option>
                                         </select>
                                         <div class="invalid-tooltip">
                                             Please select a valid Year of Manufacture.

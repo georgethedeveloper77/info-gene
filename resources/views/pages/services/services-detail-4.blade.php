@@ -40,7 +40,7 @@
                         <a href="/home">HOME LAYOUT 1</a>
                     </li>
                     <li>
-                        <a href="/compareinsurance">HOME LAYOUT 2</a>
+                        <a href="/compare-insurance">HOME LAYOUT 2</a>
                     </li>
                 </ul>
             </li>
@@ -212,7 +212,7 @@
                                     <a href="/home">Home 1</a>
                                 </li>
                                 <li>
-                                    <a href="resources/views/quotations/compareinsurance.blade.php">Home 2</a>
+                                    <a href="resources/views/quotations/compare-insurance.blade.php">Home 2</a>
                                 </li>
                             </ul>
                         </li>

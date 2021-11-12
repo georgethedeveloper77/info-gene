@@ -103,8 +103,8 @@
 <script src="{{ asset('vendor/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
 <script src="{{ asset('vendor/waypoints/lib/waypoints.debug.js') }}"></script>
 
-<script src="{{ asset('js/accordion.js') }}"></script>
-<script src="{{ asset('js/couterup.js') }}"></script>
+<script src="{{ asset('js/accordion-custom.js') }}"></script>
+<script src="{{ asset('js/couterup-custom.js') }}"></script>
 <script src="{{ asset('js/custom.js') }}"></script>
 <script src="{{ asset('js/fancy-select-custom.js') }}"></script>
 <script src="{{ asset('js/gmap.js') }}"></script>

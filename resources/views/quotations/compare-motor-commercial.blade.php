@@ -1,7 +1,7 @@
 @extends("layouts.master")
 
 @section("title")
-    Compare Insurance
+    Compare Motor
 @endsection
 
 @section("content")
@@ -16,8 +16,11 @@
                         <i class="fa fa-home"></i>
                         <a href="/home">Home</a>
                     </li>
+                    <li class="au-breadcrumb-item">
+                        <a href="/compare-insurance">Compare Insurance</a>
+                    </li>
                     <li class="au-breadcrumb-item active">
-                        <a href="/compareinsurance">Compare Insurance</a>
+                        <a href="comparemotorcommercial">Motor Commercial Insurance</a>
                     </li>
                 </ul>
             </div>
@@ -28,20 +31,16 @@
         <section class="product product-layout style-3">
             <div class="container">
                 <div class="heading">
-                    <h3 class="heading-section">Compare Insurance</h3>
-                </div>
-                <div class="sub-heading">
-                    <span>We have brought together top insurance Experts to provide you the best
-                        <br/> free advise on insurance and finance matters.</span>
+                    <h3 class="heading-section">Motor Commercial Insurance</h3>
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="product-item style-2 match-item">
                             <div class="icon">
-                                <i class="fa fa-car"></i>
+                                <i class="fa fa-truck"></i>
                             </div>
                             <div class="title">
-                                <a href="{{ url('/private-motor-quotation') }}">Motor Private Insurance</a>
+                                <a href="/comingsoon">Own Goods</a>
                             </div>
                             <div class="content">
                                 <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -49,130 +48,77 @@
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='/private-motor-quotation';"
+                                        onclick="window.location.href='comingsoon';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-item style-2 match-item">
+                            <div class="icon">
+                                <i class="fa fa-truck"></i>
+                            </div>
+                            <div class="title">
+                                <a href="/comingsoon">General Cartage</a>
+                            </div>
+                            <div class="content">
+                                <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
+                                    premium.</p>
+                            </div>
+                            <div class="view-more">
+                                <button class="btn btn-outline-warning"
+                                        onclick="window.location.href='comingsoon';"
+                                        type="button">Get Quotation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-md-4 col-sm-6">
                         <div class="product-item style-2 match-item">
                             <div class="icon">
                                 <i class="fa fa-bus"></i>
                             </div>
                             <div class="title">
-                                <a href="{{ url('/comparemotorcommercial') }}">Motor Commercial Insurance</a>
+                                <a href="/comingsoon">Institutional Buses / Vans</a>
                             </div>
                             <div class="content">
-                                <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
-                                    premium.</p>
-                            </div>
-                            <div class="view-more">
-                                <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='/comparemotorcommercial';"
-                                        type="button">Get Quotation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-2 match-item">
-                            <div class="icon">
-                                <i class="fa fa-heartbeat"></i>
-                            </div>
-                            <div class="title">
-                                <a href="{{ url('/private-motor-quotation') }}">Medical Insurance</a>
-                            </div>
-                            <div class="content">
-                                <p>If you have a partner and children, then the two of you should think about medical
+                                <p>If you have a partner and children, then the two of you should think about life
                                     insurance</p>
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='/comparemedicalinsurance';"
+                                        onclick="window.location.href='comingsoon';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-4 col-sm-6">
                         <div class="product-item style-2 match-item">
                             <div class="icon">
-                                <i class="fa fa-ambulance"></i>
+                                <i class="fa fa-car"></i>
                             </div>
                             <div class="title">
-                                <a href="{{ url('/private-motor-quotation') }}">Personal Accident Insurance</a>
+                                <a href="/comingsoon">Online Commercial </a>
                             </div>
                             <div class="content">
-                                <p>We'll rebuild or repair your home if it's damaged or destroyed.</p>
+                                <p>If you have a partner and children, then the two of you should think about life
+                                    insurance</p>
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='/private-motor-quotation';"
+                                        onclick="window.location.href='comingsoon';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-2 match-item">
-                            <div class="icon">
-                                <i class="fa fa-plane"></i>
-                            </div>
-                            <div class="title">
-                                <a href="{{ url('/private-motor-quotation') }}">Travel Policy/Insurance</a>
-                            </div>
-                            <div class="content">
-                                <p>We can help you find the best plan for your trip and your budget.</p>
-                            </div>
-                            <div class="view-more">
-                                <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='/private-motor-quotation';"
-                                        type="button">Get Quotation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-2 match-item">
-                            <div class="icon">
-                                <i class="fa fa-bank"></i>
-                            </div>
-                            <div class="title">
-                                <a href="{{ url('/private-motor-quotation') }}">Business Insurance</a>
-                            </div>
-                            <div class="content">
-                                <p>In truth, there are certain forms of insurance that are an absolute requirement for
-                                    all
-                                    businesses</p>
-                            </div>
-                            <div class="view-more">
-                                <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='/private-motor-quotation';"
-                                        type="button">Get Quotation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-2 match-item">
-                            <div class="icon">
-                                <i class="fa fa-building"></i>
-                            </div>
-                            <div class="title">
-                                <a href="{{ url('/private-motor-quotation') }}">Landlord Insurance</a>
-                            </div>
-                            <div class="content">
-                                <p>Our rental property insurance protects your property from damages</p>
-                            </div>
-                            <div class="view-more">
-                                <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='/private-motor-quotation';"
-                                        type="button">Get Quotation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+
+
                 </div>
             </div>
         </section>
@@ -191,37 +137,37 @@
                 >
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/1.png') }}"/>
+                            <img alt="partner" src="public/img/partner/1.png"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/2.png') }}"/>
+                            <img alt="partner" src="public/img/partner/2.png"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/3.png') }}"/>
+                            <img alt="partner" src="public/img/partner/3.png"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/4.png') }}"/>
+                            <img alt="partner" src="public/img/partner/4.png"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/5.png') }}"/>
+                            <img alt="partner" src="public/img/partner/5.png"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/6.png') }}"/>
+                            <img alt="partner" src="public/img/partner/6.png"/>
                         </a>
                     </div>
                     <div class="partner-item">
                         <a href="#">
-                            <img alt="partner" src="{{asset('img/partner/7.png') }}"/>
+                            <img alt="partner" src="public/img/partner/7.png"/>
                         </a>
                     </div>
                 </div>
@@ -246,7 +192,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Cheryl Cruz" src="{{asset('img/avatar/avatar-1.jpg')}}"/>
+                                <img alt="Cheryl Cruz" src="public/img/avatar/avatar-1.jpg"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -269,7 +215,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Linda Campbell" src="{{asset('img/avatar/avatar-2.jpg')}}"/>
+                                <img alt="Linda Campbell" src="public/img/avatar/avatar-2.jpg"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -290,7 +236,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="John Walker" src="{{asset('img/avatar/avatar-3.jpg')}}"/>
+                                <img alt="John Walker" src="public/img/avatar/avatar-3.jpg"/>
                             </div>
                             <div class="info">
                                 <div class="name">

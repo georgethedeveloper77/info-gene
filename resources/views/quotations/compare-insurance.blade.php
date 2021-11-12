@@ -1,7 +1,7 @@
 @extends("layouts.master")
 
 @section("title")
-    Compare Motor
+    Compare Insurance
 @endsection
 
 @section("content")
@@ -16,11 +16,8 @@
                         <i class="fa fa-home"></i>
                         <a href="/home">Home</a>
                     </li>
-                    <li class="au-breadcrumb-item">
-                        <a href="/compareinsurance">Compare Insurance</a>
-                    </li>
                     <li class="au-breadcrumb-item active">
-                        <a href="comparemotorcommercial">Motor Commercial Insurance</a>
+                        <a href="/compare-insurance">Compare Insurance</a>
                     </li>
                 </ul>
             </div>
@@ -31,149 +28,157 @@
         <section class="product product-layout style-3">
             <div class="container">
                 <div class="heading">
-                    <h3 class="heading-section">Motor Commercial Insurance</h3>
+                    <h3 class="heading-section">Compare Insurance</h3>
+                </div>
+                <div class="sub-heading">
+                    <span>We have brought together top insurance Experts to provide you the best
+                        <br/> free advise on insurance and finance matters.</span>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-2 match-item">
-                            <div class="icon">
-                                <i class="fa fa-truck"></i>
-                            </div>
-                            <div class="title">
-                                <a href="/coming-soon">Own Goods</a>
-                            </div>
-                            <div class="content">
-                                <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
-                                    premium.</p>
-                            </div>
-                            <div class="view-more">
-                                <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='coming-soon';"
-                                        type="button">Get Quotation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-2 match-item">
-                            <div class="icon">
-                                <i class="fa fa-truck"></i>
-                            </div>
-                            <div class="title">
-                                <a href="/coming-soon">General Cartage</a>
-                            </div>
-                            <div class="content">
-                                <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
-                                    premium.</p>
-                            </div>
-                            <div class="view-more">
-                                <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='comingsoon';"
-                                        type="button">Get Quotation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                        <div class="product-item style-2 match-item">
-                            <div class="icon">
-                                <i class="fa fa-bus"></i>
-                            </div>
-                            <div class="title">
-                                <a href="/coming-soon">Institutional Buses / Vans</a>
-                            </div>
-                            <div class="content">
-                                <p>If you have a partner and children, then the two of you should think about life
-                                    insurance</p>
-                            </div>
-                            <div class="view-more">
-                                <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='comingsoon';"
-                                        type="button">Get Quotation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="col-md-4 col-sm-6">
                         <div class="product-item style-2 match-item">
                             <div class="icon">
                                 <i class="fa fa-car"></i>
                             </div>
                             <div class="title">
-                                <a href="/coming-soon">Online Commercial </a>
+                                <a href="{{ url('/private-motor-quotation') }}">Motor Private Insurance</a>
                             </div>
                             <div class="content">
-                                <p>If you have a partner and children, then the two of you should think about life
-                                    insurance</p>
+                                <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
+                                    premium.</p>
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='comingsoon';"
+                                        onclick="window.location.href='/private-motor-quotation';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
                         </div>
                     </div>
-
-
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-item style-2 match-item">
+                            <div class="icon">
+                                <i class="fa fa-bus"></i>
+                            </div>
+                            <div class="title">
+                                <a href="{{ url('/compare-motor-commercial') }}">Motor Commercial Insurance</a>
+                            </div>
+                            <div class="content">
+                                <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
+                                    premium.</p>
+                            </div>
+                            <div class="view-more">
+                                <button class="btn btn-outline-warning"
+                                        onclick="window.location.href='/compare-motor-commercial';"
+                                        type="button">Get Quotation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-item style-2 match-item">
+                            <div class="icon">
+                                <i class="fa fa-heartbeat"></i>
+                            </div>
+                            <div class="title">
+                                <a href="{{ url('/private-motor-quotation') }}">Medical Insurance</a>
+                            </div>
+                            <div class="content">
+                                <p>If you have a partner and children, then the two of you should think about medical
+                                    insurance</p>
+                            </div>
+                            <div class="view-more">
+                                <button class="btn btn-outline-warning"
+                                        onclick="window.location.href='/compare-medical-insurance';"
+                                        type="button">Get Quotation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-item style-2 match-item">
+                            <div class="icon">
+                                <i class="fa fa-ambulance"></i>
+                            </div>
+                            <div class="title">
+                                <a href="{{ url('/comingsoon') }}">Personal Accident Insurance</a>
+                            </div>
+                            <div class="content">
+                                <p>We'll rebuild or repair your home if it's damaged or destroyed.</p>
+                            </div>
+                            <div class="view-more">
+                                <button class="btn btn-outline-warning"
+                                        onclick="window.location.href='/comingsoon';"
+                                        type="button">Get Quotation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-item style-2 match-item">
+                            <div class="icon">
+                                <i class="fa fa-plane"></i>
+                            </div>
+                            <div class="title">
+                                <a href="{{ url('/comingsoon') }}">Travel Policy/Insurance</a>
+                            </div>
+                            <div class="content">
+                                <p>We can help you find the best plan for your trip and your budget.</p>
+                            </div>
+                            <div class="view-more">
+                                <button class="btn btn-outline-warning"
+                                        onclick="window.location.href='/comingsoon';"
+                                        type="button">Get Quotation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-item style-2 match-item">
+                            <div class="icon">
+                                <i class="fa fa-bank"></i>
+                            </div>
+                            <div class="title">
+                                <a href="{{ url('/comingsoon') }}">Business Insurance</a>
+                            </div>
+                            <div class="content">
+                                <p>In truth, there are certain forms of insurance that are an absolute requirement for
+                                    all
+                                    businesses</p>
+                            </div>
+                            <div class="view-more">
+                                <button class="btn btn-outline-warning"
+                                        onclick="window.location.href='/comingsoon';"
+                                        type="button">Get Quotation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-item style-2 match-item">
+                            <div class="icon">
+                                <i class="fa fa-building"></i>
+                            </div>
+                            <div class="title">
+                                <a href="{{ url('/comingsoon') }}">Landlord Insurance</a>
+                            </div>
+                            <div class="content">
+                                <p>Our rental property insurance protects your property from damages</p>
+                            </div>
+                            <div class="view-more">
+                                <button class="btn btn-outline-warning"
+                                        onclick="window.location.href='/comingsoon';"
+                                        type="button">Get Quotation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- END PRODUCT, STYLE 4-->
 
-        <!-- PARTNER-->
-        <div class="partner partner-layout style-1">
-            <div class="container">
-                <div
-                    class="partner-list owl-carousel"
-                    data-center="0"
-                    data-col-lg="4"
-                    data-col-md="2"
-                    data-col-sm="1"
-                    data-items="5"
-                >
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/1.png"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/2.png"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/3.png"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/4.png"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/5.png"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/6.png"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/7.png"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END PARTNER-->
+
 
         <!-- TESTINMONIAL, STYLE 2-->
         <section class="testinmonials testinmonials-layout style-2">
@@ -192,7 +197,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Cheryl Cruz" src="public/img/avatar/avatar-1.jpg"/>
+                                <img alt="Cheryl Cruz" src="{{asset('img/avatar/avatar-1.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -215,7 +220,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Linda Campbell" src="public/img/avatar/avatar-2.jpg"/>
+                                <img alt="Linda Campbell" src="{{asset('img/avatar/avatar-2.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -236,7 +241,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="John Walker" src="public/img/avatar/avatar-3.jpg"/>
+                                <img alt="John Walker" src="{{asset('img/avatar/avatar-3.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -257,6 +262,57 @@
             </div>
         </section>
         <!-- END TESTINMONIAL, STYLE 2-->
+
+        <!-- PARTNER-->
+        <div class="partner partner-layout style-1">
+            <div class="container">
+                <div
+                    class="partner-list owl-carousel"
+                    data-center="0"
+                    data-col-lg="4"
+                    data-col-md="2"
+                    data-col-sm="1"
+                    data-items="5"
+                >
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/1.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/2.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/3.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/4.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/5.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/6.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/7.png') }}"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END PARTNER-->
     </div>
 
 @endsection

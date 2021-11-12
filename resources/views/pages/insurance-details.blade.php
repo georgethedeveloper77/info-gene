@@ -14,7 +14,7 @@
                     <a href="/home">Home</a>
                 </li>
                 <li class="au-breadcrumb-item active">
-                    <a href="/compareinsurance">Compare Insurance</a>
+                    <a href="/compare-insurance">Compare Insurance</a>
                 </li>
             </ul>
         </div>
@@ -41,7 +41,7 @@
                                         <div class="slider-btn">
                                             <button
                                                 class="au-btn au-btn-orange au-btn-sm"
-                                                onclick="window.location.href='/compareinsurance';">Get a quote
+                                                onclick="window.location.href='/compare-insurance';">Get a quote
                                             </button>
                                         </div>
                                     </div>
@@ -57,7 +57,7 @@
                                         </div>
                                         <div class="slider-btn">
                                             <button class="au-btn au-btn-orange au-btn-sm"
-                                                    onclick="window.location.href='/compareinsurance';">Get a quote
+                                                    onclick="window.location.href='/compare-insurance';">Get a quote
                                             </button>
                                         </div>
                                     </div>
@@ -73,7 +73,7 @@
                                         </div>
                                         <div class="slider-btn">
                                             <button class="au-btn au-btn-orange au-btn-sm"
-                                                    onclick="window.location.href='/compareinsurance';">Get a quote
+                                                    onclick="window.location.href='/compare-insurance';">Get a quote
                                             </button>
                                         </div>
                                     </div>

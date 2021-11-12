@@ -42,7 +42,7 @@
                             data-voffset="320"
                             data-x="left"
                             data-y="top"
-                            onclick="window.location.href='/compareinsurance';"
+                            onclick="window.location.href='/compare-insurance';"
                         >
                             Read More
                         </button>
@@ -117,7 +117,7 @@
                             data-voffset="320"
                             data-x="left"
                             data-y="top"
-                            onclick="window.location.href='/compareinsurance';"
+                            onclick="window.location.href='/compare-insurance';"
                         >
                             Compare Insurance
                         </button>

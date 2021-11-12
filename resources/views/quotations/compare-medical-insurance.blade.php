@@ -17,10 +17,10 @@
                         <a href="/home">Home</a>
                     </li>
                     <li class="au-breadcrumb-item">
-                        <a href="/compareinsurance">Compare Insurance</a>
+                        <a href="/compare-insurance">Compare Insurance</a>
                     </li>
                     <li class="au-breadcrumb-item active">
-                        <a href="resources/views/pages/comparemotorcommercial.blade.phpde.php">Medical Insurance</a>
+                        <a href="/compare-medical-insurance">Medical Insurance</a>
                     </li>
                 </ul>
             </div>
@@ -40,7 +40,7 @@
                                 <i class="fa fa-wheelchair"></i>
                             </div>
                             <div class="title">
-                                <a href="/coming-soon">Seniors</a>
+                                <a href="/comingsoon">Seniors</a>
                             </div>
                             <div class="content">
                                 <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -48,7 +48,7 @@
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='get-a-quote.html';"
+                                        onclick="window.location.href='comingsoon';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
@@ -61,7 +61,7 @@
                                 <i class="fa fa-user-md"></i>
                             </div>
                             <div class="title">
-                                <a href="/coming-soon">Normal</a>
+                                <a href="/comingsoon">Normal</a>
                             </div>
                             <div class="content">
                                 <p>Insurance fraud puts an extra ksh 70000 on the price of every annual car insurance
@@ -69,7 +69,7 @@
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='get-a-quote.html';"
+                                        onclick="window.location.href='comingsoon';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
@@ -82,7 +82,7 @@
                                 <i class="fa fa-users"></i>
                             </div>
                             <div class="title">
-                                <a href="/coming-soon">Children</a>
+                                <a href="/comingsoon">Children</a>
                             </div>
                             <div class="content">
                                 <p>If you have a partner and children, then the two of you should think about life
@@ -90,7 +90,7 @@
                             </div>
                             <div class="view-more">
                                 <button class="btn btn-outline-warning"
-                                        onclick="window.location.href='get-a-quote.html';"
+                                        onclick="window.location.href='comingsoon';"
                                         type="button">Get Quotation
                                 </button>
                             </div>
@@ -100,57 +100,6 @@
             </div>
         </section>
         <!-- END PRODUCT, STYLE 4-->
-
-        <!-- PARTNER-->
-        <div class="partner partner-layout style-1">
-            <div class="container">
-                <div
-                    class="partner-list owl-carousel"
-                    data-center="0"
-                    data-col-lg="4"
-                    data-col-md="2"
-                    data-col-sm="1"
-                    data-items="5"
-                >
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/1.png"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/2.png"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/3.png"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/4.png"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/5.png"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/6.png"/>
-                        </a>
-                    </div>
-                    <div class="partner-item">
-                        <a href="#">
-                            <img alt="partner" src="public/img/partner/7.png"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END PARTNER-->
 
         <!-- TESTINMONIAL, STYLE 2-->
         <section class="testinmonials testinmonials-layout style-2">
@@ -169,7 +118,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Cheryl Cruz" src="public/img/avatar/avatar-1.jpg"/>
+                                <img alt="Cheryl Cruz" src="{{asset('img/avatar/avatar-1.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -192,7 +141,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="Linda Campbell" src="public/img/avatar/avatar-2.jpg"/>
+                                <img alt="Linda Campbell"  src="{{asset('img/avatar/avatar-1.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -213,7 +162,7 @@
                         </div>
                         <div class="personal">
                             <div class="avatar">
-                                <img alt="John Walker" src="public/img/avatar/avatar-3.jpg"/>
+                                <img alt="John Walker"  src="{{asset('img/avatar/avatar-1.jpg')}}"/>
                             </div>
                             <div class="info">
                                 <div class="name">
@@ -234,6 +183,58 @@
             </div>
         </section>
         <!-- END TESTINMONIAL, STYLE 2-->
+
+        <!-- PARTNER-->
+        <div class="partner partner-layout style-1">
+            <div class="container">
+                <div
+                    class="partner-list owl-carousel"
+                    data-center="0"
+                    data-col-lg="4"
+                    data-col-md="2"
+                    data-col-sm="1"
+                    data-items="5"
+                >
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/1.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/2.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/3.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/4.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/5.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/6.png') }}"/>
+                        </a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#">
+                            <img alt="partner" src="{{asset('img/partner/7.png') }}"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END PARTNER-->
+
     </div>
 
 @endsection

@@ -1,185 +1,86 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<!--<![endif]-->
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>
-        Imminent - The most spectacular coming soon template!
-    </title><!-- Behavioral Meta Data -->
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Core Meta Data -->
-    <meta content="georgethedeveloper" name="author">
-    <meta content="The most spectacular coming soon template!" name="description">
-    <meta content="Comming Soon, Responsive, Landing Page, One Page" name="keywords"><!-- Open Graph Meta Data -->
-    <meta content="The most spectacular coming soon template!">
-    <meta content="georgethedeveloper">
-    <meta content="georgethedeveloper">
-    <meta content="website">
-    <meta content="index.html"><!-- Twitter Card Meta Data -->
-    <meta content="summary" name="twitter:card">
-    <meta content="@georgethedeveloper" name="twitter:site">
-    <meta content="@georgethedeveloper" name="twitter:creator">
-    <meta content="georgethedeveloper" name="twitter:title">
-    <meta content="Imminent - The most spectacular coming soon template!" name="twitter:description">
-
-    <link href="favicon.png" rel="shortcut icon" type="{{ asset('img/icons/favicon.ico') }}">
-
-    <!-- CSS -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
-    <!-- Styles -->
-    <link href="css/loader.css" rel="stylesheet" type="text/css">
-    <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
-    <link href="{{ asset('css/coming.css') }}" rel="stylesheet" type="text/css">
-<!--[if lt IE 9]>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/ie.css') }}" />
-    <![endif]-->
-    <!-- Javascript -->
-
-    <script src="{{ asset('vendor/jquery/dist/jquery.min.js') }}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="no-referrer" name="referrer">
+    <meta content="My Insurance" name="description">
+    <meta content="My Insurance" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="{{ asset('img/icons/favicon.ico') }}" rel="icon" sizes="16x16" type="image/gif">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css.map" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/FontAwesome.otf" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2"
+          rel="stylesheet">
+    <title>Info Gene</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/comingsoon.css') }}">
 </head>
-
 <body>
-<div class="preloader">
-    <div class="loading">
-        <h2>
-            Loading...
-        </h2>
-        <span class="progress"></span>
-    </div>
-</div>
 
 <div class="wrapper">
-    <ul class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15"
-        id="scene">
-        <li class="layer" data-depth="0.00">
-        </li>
-        <!-- BG -->
+    <header>
+        <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 318.5 100 125" enable-background="new 0 318.5 100 100"><path d="M88.888 349.937c-.109-.298-.405-.481-.718-.463-5.109.383-11.558.865-18.163 1.358l9.538-12.475c.182-.237.195-.563.033-.814-.162-.25-.46-.376-.756-.307-6.694 1.549-38.692 8.971-43.12 10.304l-6.457-5.539c-.108-.093-.241-.15-.382-.166l-6.908-.774-.053.006-.167.018-.126.032-.044.012-10.098 4.926c-.244.119-.398.366-.398.638 0 .271.155.518.399.637l10.442 5.075.226 3.224.007.024-.001.026 2.333 16.271.012.042.02.066.079.17.033.052.184.169.008.007.019.005.141.066 19.376 5.903 5.754 3.548 1.262 2.943-2.657 14.021c-.04.212.019.431.159.594.135.157.332.247.538.247l.025-.001c.154-.006 15.421-.557 16.007-.572.221-.006.45-.129.579-.308.243-.335.609-.843-4.467-17.763l-.05-.094-.026-.075c-.375-.606-3.278-5.282-4.554-7.092l31.722-23.125c.257-.187.358-.52.249-.816zm-20.773 1.036c-14.051 1.048-28.297 2.104-31.539 2.321l-.293-4.463c3.457-1.007 25.228-6.127 40.94-9.77l-9.108 11.912zm-17.659 29.556l-4.189-2.583 7.808-2.803-3.619 5.386zm-26.808-24.333l10.913-1.279-8.965 14.862-1.948-13.583zm12.112-.522l7.724 21.011-17.23-5.25 9.506-15.761zm-7.272-12.455l6.365 5.46.312 4.74-11.666 1.368-.856-12.224 5.845.656zm-15.092 3.47l7.845-3.827.554 7.909-8.399-4.082zm36.868 51.644l2.459-12.979 7.688-3.065c1.93 6.464 3.891 13.442 4.275 15.528-2.614.09-11.537.412-14.422.516zm2.215-14.407l-1.011-2.36 4.459-6.637c.893 1.301 2.583 3.965 3.894 6.069l-7.342 2.928zm3.106-10.83l-10.522 3.777-8.154-22.182c6.186-.423 39.375-2.906 48.886-3.618l-30.21 22.023z"/></svg>
+    </header>
 
-        <li class="layer" data-depth="0.10">
-            <div class="background">
-            </div>
-        </li>
+    <main class="content">
+        <h1>InfoGene!</h1>
+        <h2>Coming Soon</h2>
 
-        <!-- Hero -->
-
-        <li class="layer" data-depth="0.20">
-            <div class="title">
-                <h2>
-                    IMMINENT
-                </h2>
-                <span class="line"></span>
-            </div>
-        </li>
-
-        <li class="layer" data-depth="0.25">
-            <div class="sphere">
-                <img alt="sphere" src="{{ asset('img/coming/sphere.png') }}">
-            </div>
-        </li>
-
-        <li class="layer" data-depth="0.30">
-            <div class="hero">
-                <h1 id="countdown">
-                    The most spectacular coming soon template!
-                </h1>
-
-                <p class="sub-title">
-                    The most spectacular coming soon template!
-                </p>
-            </div>
-        </li>
-        <!-- Flakes -->
-
-        <li class="layer" data-depth="0.40">
-            <div class="depth-1 flake1">
-                <img alt="flake" src="{{ asset('img/coming/flakes/depth1/flakes1.png') }}">
+        <div class="countdown">
+            <div class="countdown__days">
+                <div class="number"></div>
+                <span class>Days</span>
             </div>
 
-            <div class="depth-1 flake2">
-                <img alt="flake" src="{{ asset('img/coming/flakes/depth1/flakes2.png') }}">
+            <div class="countdown__hours">
+                <div class="number"></div>
+                <span class>Hours</span>
             </div>
 
-            <div class="depth-1 flake3">
-                <img alt="flake" src="{{ asset('img/coming/flakes/depth1/flakes3.png') }}">
+            <div class="countdown__minutes">
+                <div class="number"></div>
+                <span class>Minutes</span>
             </div>
 
-            <div class="depth-1 flake4">
-                <img alt="flake" src="{{ asset('img/coming/flakes/depth1/flakes4.png') }}">
+            <div class="countdown__seconds">
+                <div class="number"></div>
+                <span class>Seconds</span>
             </div>
-        </li>
+        </div>
 
-        <li class="layer" data-depth="0.50">
-            <div class="depth-2 flake1">
-                <img alt="flake" src="img/coming/flakes/depth2/flakes1.png">
-            </div>
+        <h2>Our website is under construction. We`ll be here soon<br />with our new awesome site. Subscribe to be notified.</h2>
 
-            <div class="depth-2 flake2">
-                <img alt="flake" src="img/coming/flakes/depth2/flakes2.png">
-            </div>
-        </li>
+        <form action="">
+            <input id="form-email" name="form-email" type="email" placeholder="Your email address" />
+            <input type="submit" value="Notify me" />
+        </form>
+    </main>
 
-        <li class="layer" data-depth="0.60">
-            <div class="depth-3 flake1">
-                <img alt="flake" src="img/coming/flakes/depth3/flakes1.png">
-            </div>
-
-            <div class="depth-3 flake2">
-                <img alt="flake" src="img/coming/flakes/depth3/flakes2.png">
-            </div>
-
-            <div class="depth-3 flake3">
-                <img alt="flake" src="img/coming/flakes/depth3/flakes3.png">
-            </div>
-
-            <div class="depth-3 flake4">
-                <img alt="flake" src="img/coming/flakes/depth3/flakes4.png">
-            </div>
-        </li>
-
-        <li class="layer" data-depth="0.80">
-            <div class="depth-4">
-                <img alt="flake" src="img/coming/flakes/depth4/flakes.png">
-            </div>
-        </li>
-
-        <li class="layer" data-depth="1.00">
-            <div class="depth-5">
-                <img alt="flake" src="img/coming/flakes/depth5/flakes.png">
-            </div>
-        </li>
-        <!-- Contact -->
-
-        <li class="layer" data-depth="0.20">
-            <div class="contact">
-                <ul class="icons">
-                    <li>
-                        <a class="behance" href="#"><i class="fa fa-behance"></i></a>
-                    </li>
-
-                    <li>
-                        <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-
-                    <li>
-                        <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
-                    </li>
-                </ul>
-                Theme by <a href="https://georgethedeveloper.com/" target="_blank">georgethedeveloper</a>
-                <a class="mail"
-                   href="mailto:info@example.com?subject=Hi%20georgethedeveloper!">info@example.com</a>
-            </div>
-        </li>
-    </ul>
+    <footer>
+        <ul class="footer__links">
+            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+            <li><a href="#"><span class="fa fa-github"></span></a></li>
+            <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+        </ul>
+    </footer>
 </div>
 
-<!-- Javascript -->
-<script src="{{ asset('js/plugins.js') }}"></script>
-<script src="{{ asset('js/jquery.countdown.min.js') }}"></script>
-<script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('js/comingsoon.js') }}"></script>
+
 
 </body>
-
 </html>
