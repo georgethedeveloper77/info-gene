@@ -48,26 +48,27 @@ Route::get('/article-detail', function () {
     return view('pages/article-detail');
 });
 
-Route::get('/compareinsurance', function () {
-    return view('quotations/compareinsurance');
+Route::get('/compare-insurance', function () {
+    return view('quotations/compare-insurance');
 });
 
-Route::get('/comparemedicalinsurance', function () {
-    return view('quotations/comparemedicalinsurance');
+Route::get('/compare-medical-insurance', function () {
+    return view('quotations/compare-medical-insurance');
 });
 
-Route::get('/comparemotorcommercial', function () {
-    return view('quotations/comparemotorcommercial');
-});
-
-Route::get('/contact', function () {
-    return view('pages/contact');
+Route::get('/compare-motor-commercial', function () {
+    return view('quotations/compare-motor-commercial');
 });
 
 /*Route::prefix('quotations')->group(function () {*/
 Route::get('private-motor-quotation', [QuotationController::class, 'getCars'])->name('private-motor-quotation');
 Route::post('private-motor-quotations-results', [QuotationController::class, 'motorSaveQoute'])->name('private-motor-quotations-results');
 /* });*/
+
+Route::get('/contact', function () {
+    return view('pages/contact');
+});
+
 
 /*Route::resource('quotations', QuotationController::class);*/
 
