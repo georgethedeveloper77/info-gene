@@ -68,4 +68,4 @@ Small note: If editing the Readme, please conform to the [standard-readme](https
 
 ## License
 
-[MIT © Richard McRichface.](../LICENSE)
+[MIT © George karani.](../LICENSE)
