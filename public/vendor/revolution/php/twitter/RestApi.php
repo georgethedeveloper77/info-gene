@@ -7,6 +7,7 @@
 
 namespace TwitterPhp;
 
+use Exception;
 use TwitterPhp\Connection\Application;
 use TwitterPhp\Connection\User;
 
@@ -17,11 +18,9 @@ require_once 'connection/User.php';
 /**
  * Class TwitterRestApiException
  */
-class RestApiException extends \Exception
+class RestApiException extends Exception
 {
 }
-
-;
 
 /**
  * Class RestApi
@@ -72,7 +71,7 @@ class RestApi
      * Connect to Twitter API as application.
      * @link https://dev.twitter.com/docs/auth/application-only-auth
      *
-     * @return \TwitterPhp\Connection\Application
+     * @return Application
      */
     public function connectAsApplication()
     {
@@ -83,7 +82,7 @@ class RestApi
      * Connect to Twitter API as user.
      * @link https://dev.twitter.com/docs/auth/oauth/single-user-with-examples
      *
-     * @return \TwitterPhp\Connection\User
+     * @return User
      * @throws TwitterRestApiException
      */
     public function connectAsUser()

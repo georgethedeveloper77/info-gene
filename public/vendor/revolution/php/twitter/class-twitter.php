@@ -1,4 +1,7 @@
 <?php
+
+use TwitterPhp\RestApi;
+
 include 'RestApi.php';
 
 /**
@@ -106,7 +109,7 @@ class TP_twitter
      */
     public function get_public_photos($twitter_account)
     {
-        $twitter = new \TwitterPhp\RestApi($this->consumer_key, $this->consumer_secret, $this->access_token, $this->access_token_secret);
+        $twitter = new RestApi($this->consumer_key, $this->consumer_secret, $this->access_token, $this->access_token_secret);
         /*
          * Connect as application
          * https://dev.twitter.com/docs/auth/application-only-auth

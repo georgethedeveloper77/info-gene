@@ -16,22 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home2');
 });
 
 Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/comingsoon', function () {
-    return view('pages/coming-soon');
-});
-
-Route::get('/errorpage', function () {
-    return view('pages/error-page');
-});
-
-Route::get('/about', function () {
+Route::get('about', function () {
     return view('pages/about');
 });
 
@@ -48,36 +40,36 @@ Route::get('/article-detail', function () {
     return view('pages/article-detail');
 });
 
-Route::get('/compare-insurance', function () {
-    return view('quotations/compare-insurance');
+Route::get('/compareinsurance', function () {
+    return view('quotations/compareinsurance');
 });
 
-Route::get('/compare-medical-insurance', function () {
-    return view('quotations/compare-medical-insurance');
+Route::get('/comparemedicalinsurance', function () {
+    return view('quotations/comparemedicalinsurance');
 });
 
-Route::get('/compare-motor-commercial', function () {
-    return view('quotations/compare-motor-commercial');
+Route::get('/comparemotorcommercial', function () {
+    return view('quotations/comparemotorcommercial');
 });
-
-/*Route::prefix('quotations')->group(function () {*/
-Route::get('private-motor-quotation', [QuotationController::class, 'getCars'])->name('private-motor-quotation');
-Route::post('private-motor-quotations-results', [QuotationController::class, 'motorSaveQoute'])->name('private-motor-quotations-results');
-/* });*/
 
 Route::get('/contact', function () {
     return view('pages/contact');
 });
 
+/*Route::prefix('quotations')->group(function () {*/
+Route::get('private-motor-quotation', [QuotationController::class, 'getCars'])->name('private-motor-quotation');
+
+Route::post('private-motor-quotations-results', [QuotationController::class, 'motorSaveQoute'])->name('private-motor-quotations-results');
+/* });*/
 
 /*Route::resource('quotations', QuotationController::class);*/
 
-/*Route::get('/private-motor-quotation', function () {
-    return view('quotations/private-motor-quotation');
+/*Route::get('/getaquote', function () {
+    return view('quotations/getaquote');
 });
 
-Route::get('/private-motor-quotations-results', function () {
-    return view('quotations/private-motor-quotations-results');
+Route::get('/quotationsresults', function () {
+    return view('quotations/quotationsresults');
 });*/
 
 Route::get('/insurance-products', function () {
